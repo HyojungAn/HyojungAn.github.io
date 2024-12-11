@@ -1,12 +1,31 @@
-@font-face{
-	font-family: 'My Font';
-	src: url('connection.otf') format('opentype');
-	text-align: center;
-	font-weight: 1000;
+@font-face {
+    font-family: 'My Font';
+    src: url('connection.otf') format('opentype');
+    font-weight: bold; 
 }
 
 body {
-	font-family: 'My Font'; 
-	background: black;
-	/*this name should match the font-face rule you set up*/
+    font-family: 'My Font'; 
+    background-color: black; 
+    color: white; 
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    font-size: 24px; 
+}
+
+.links {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.links a {
+    font-size: 18px; 
+    color: #000; 
+    text-decoration: none; 
+}
+
+.links a:hover {
+    color: #007BFF;
+    text-decoration: underline; 
 }
