@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'My Font';
     src: url('connection.otf') format('opentype');
-    font-weight: bold; 
 }
 
 body {
@@ -13,18 +12,15 @@ body {
     text-align: center;
     font-size: 24px; 
 }
-
-.links {
+.containor.links {
     margin: 20px 0;
     text-align: center;
 }
-
 .links a {
     font-size: 18px; 
     color: #000; 
     text-decoration: none; 
 }
-
 .links a:hover {
     color: #007BFF;
     text-decoration: underline; 
