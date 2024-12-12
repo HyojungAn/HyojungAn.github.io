@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>connection motion</title>
+  <title>Connection Motion</title>
   <style>
     body {
+      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
+      background-color: #000; /* 배경색 검정 */
+      overflow: hidden; /* 스크롤 방지 */
     }
     video {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw; /* 뷰포트 전체 너비 */
+      height: 100vh; /* 뷰포트 전체 높이 */
+      object-fit: cover; /* 비디오 비율 유지하며 화면 가득 채우기 */
     }
   </style>
 </head>
 <body>
-  <video controls autoplay loop muted>
+  <video autoplay loop muted>
     <source src="connection motion.mp4" type="video/mp4">
-    <source src="connection motion.webm" type="video/webm">
     Your browser does not support the video tag.
   </video>
 </body>
