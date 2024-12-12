@@ -7,13 +7,15 @@
 body {
     font-family: 'My Font';
     background: beige;
-    text-align: center; /* 중앙 정렬 추가 */
+    text-align: center;
 }
 
 a {
-    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    color: initial; 
+    text-decoration: none; 
 }
 
 a:hover {
-    text-decoration: underline; /* 마우스를 올렸을 때 밑줄 추가 */
+    color: inherit; 
+    text-decoration: underline; 
 }
