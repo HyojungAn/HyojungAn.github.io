@@ -1,0 +1,84 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3ef; /* 배경색 */
+}
+
+/* 전체 포스터 영역 */
+.poster {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 두 개의 영역: 원형과 텍스트 */
+  height: 100vh;
+  padding: 2rem;
+}
+
+/* 원형 요소 */
+.circles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.circle.blue {
+  background-color: #8ca4ab;
+}
+
+.circle.brown {
+  background-color: #bca595;
+}
+
+.circle.large {
+  width: 200px;
+  height: 200px;
+}
+
+.circle.small {
+  width: 150px;
+  height: 150px;
+}
+
+/* 텍스트 영역 */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2d2d2d;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.details {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
