@@ -1,4 +1,11 @@
-/* styles.css */
+/* Reset 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 화면 설정 */
 body {
     margin: 0;
     padding: 0;
@@ -10,15 +17,20 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* 포스터 컨테이너 */
 .poster {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 텍스트와 도형 2열 */
+    gap: 20px;
     width: 80%;
     max-width: 1000px;
+    height: auto;
 }
 
+/* 텍스트 섹션 스타일 */
 .text-section {
     padding: 20px;
+    text-align: left;
 }
 
 .text-section h1 {
@@ -40,29 +52,31 @@ body {
     color: #555;
 }
 
+/* 원형 섹션 (도형 배치) */
 .circle-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 배치 */
+    gap: 20px; /* 원 사이 간격 */
     align-items: center;
     justify-items: center;
 }
 
+/* 원형 스타일 */
 .circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 120px; /* 원의 너비 */
+    height: 120px; /* 원의 높이 */
+    border-radius: 50%; /* 완전한 원 */
+    background-color: #ccc; /* 기본 배경색 */
 }
 
-.blue {
-    background-color: #8cb5c4;
+.circle.blue {
+    background-color: #8cb5c4; /* 파란색 */
 }
 
-.brown {
-    background-color: #b4907a;
+.circle.brown {
+    background-color: #b4907a; /* 갈색 */
 }
 
-.overlay {
-    background-color: rgba(139, 120, 109, 0.7);
-    position: relative;
+.circle.overlay {
+    background-color: rgba(139, 120, 109, 0.7); /* 투명 효과 */
 }
