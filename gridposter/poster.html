@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Typographic Poster</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Poster</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="poster">
-    <section class="text-block">
-      <h1>tonhalle-quartett</h1>
-      <h2>zürcher</h2>
-      <h2>bläser-quintett</h2>
-      <h2>strawinsky</h2>
-      <h2>schönberg</h2>
-      <h2>honegger</h2>
-      <p>musica viva</p>
-      <p>donnerstag, 24. april 1958, 20.15 uhr</p>
-      <p>tonhalle, kleiner saal</p>
-    </section>
-    <section class="circle-grid">
-      <!-- 원을 표현하기 위한 div -->
-      <div class="circle circle-1"></div>
-      <div class="circle circle-2"></div>
-      <div class="circle circle-3"></div>
-      <div class="circle circle-4"></div>
-      <div class="circle circle-5"></div>
-      <div class="circle circle-6"></div>
-    </section>
-  </main>
+    <div class="poster">
+        <div class="text-section">
+            <h1>tonhalle-quartett</h1>
+            <p>zürcher<br>bläser-quintett</p>
+            <p>strawinsky<br>schönberg<br>honegger</p>
+            <p class="details">
+                musica viva<br>
+                donnerstag, 24. april 1958, 20.15 uhr<br>
+                tonhalle, kleiner saal<br><br>
+                vorverkauf tonhallekasse, hug, jecklin, kuoni<br>
+                karten fr. 3.30 bis 7.70
+            </p>
+        </div>
+        <div class="circle-section">
+            <div class="circle blue"></div>
+            <div class="circle brown"></div>
+            <div class="circle overlay"></div>
+            <!-- Repeat circles for full grid -->
+        </div>
+    </div>
 </body>
 </html>
