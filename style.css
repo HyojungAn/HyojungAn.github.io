@@ -1,11 +1,19 @@
-@font-face{
-	font-family: 'My Font';
-	src: url('connection.otf') format('opentype');
-	font-weight: 400;
+@font-face {
+    font-family: 'My Font';
+    src: url('connection.otf') format('opentype');
+    font-weight: 400;
 }
 
 body {
-	font-family: 'My Font'; 
-	background: beige;
-	/*this name should match the font-face rule you set up*/
+    font-family: 'My Font';
+    background: beige;
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+a {
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+}
+
+a:hover {
+    text-decoration: underline; /* 마우스를 올렸을 때 밑줄 추가 */
 }
