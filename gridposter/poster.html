@@ -8,19 +8,22 @@
 </head>
 <body>
     <div class="poster">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <!-- 각 원형 패턴 -->
-            <circle cx="250" cy="250" r="50" stroke="red" stroke-width="5" fill="none" />
-            <circle cx="250" cy="250" r="100" stroke="green" stroke-width="5" fill="none" />
-            <circle cx="250" cy="250" r="150" stroke="orange" stroke-width="5" fill="none" />
-            <!-- 반복 추가 -->
+        <svg id="circleSvg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- 원 그룹 -->
+            <g id="circleGroup">
+                <circle cx="150" cy="150" r="50" stroke="red" stroke-width="5" fill="none" />
+                <circle cx="350" cy="150" r="50" stroke="blue" stroke-width="5" fill="none" />
+                <circle cx="150" cy="350" r="50" stroke="green" stroke-width="5" fill="none" />
+                <circle cx="350" cy="350" r="50" stroke="orange" stroke-width="5" fill="none" />
+                <circle cx="250" cy="250" r="50" stroke="purple" stroke-width="5" fill="none" />
+            </g>
         </svg>
         <div class="text">
             <h1>musica viva</h1>
             <p>Donnerstag, den 7. Januar 1971<br>20.15 Uhr Grosser Tonhallesaal</p>
         </div>
     </div>
+    <script src="poster.js"></script>
 </body>
 </html>
-
 

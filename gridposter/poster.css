@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: white;
+    transition: background-color 0.5s ease; /* 부드러운 배경색 변화 */
 }
 
 .poster {
@@ -16,10 +17,16 @@ svg {
     width: 300px;
     height: 300px;
     margin: auto;
-    cursor: pointer; /* 마우스를 올리면 클릭 가능하다는 표시 */
+    cursor: pointer;
     transition: transform 0.5s ease; /* 부드러운 회전 효과 */
 }
 
 svg:hover {
     transform: skew(60deg); /* 한 바퀴 회전 */
+}
+
+.circle {
+    stroke-width: 5;
+    fill: none;
+    transition: stroke 0.5s ease; /* 부드러운 색상 변화 효과 */
 }
