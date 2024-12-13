@@ -36,6 +36,7 @@ svg:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 20px; /* 그룹 간 간격 */
 }
 
 .circleSet g {
@@ -45,3 +46,4 @@ svg:hover {
 .circleSet circle {
     margin-bottom: 5px; /* 원 사이 간격 */
 }
+
