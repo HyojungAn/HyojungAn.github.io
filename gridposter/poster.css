@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
     background-color: white;
-    transition: background-color 0.5s ease;
 }
 
 .poster {
@@ -14,36 +13,13 @@ body {
 }
 
 svg {
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     margin: auto;
-    cursor: pointer;
-    transition: transform 0.5s ease;
+    cursor: pointer; /* 마우스를 올리면 클릭 가능하다는 표시 */
+    transition: transform 0.5s ease; /* 부드러운 회전 효과 */
 }
 
 svg:hover {
-    transform: skew(60deg);
-}
-
-.circle {
-    stroke-width: 5;
-    fill: none;
-    transition: stroke 0.5s ease;
-}
-
-.circleSet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px; /* 그룹 간 간격 */
-}
-
-.circleSet g {
-    margin: 10px; /* 세트 사이 간격 */
-}
-
-.circleSet circle {
-    margin-bottom: 5px; /* 원 사이 간격 */
-}
-
+    transform: skew(60deg); /* 한 바퀴 회전 */
+} 
