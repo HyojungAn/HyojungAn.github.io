@@ -20,6 +20,6 @@ svg {
     transition: transform 0.5s ease; /* 부드러운 회전 효과 */
 }
 
-svg.rotate {
-    transform: rotate(360deg); /* 한 바퀴 회전 */
+svg:hover {
+    transform: skeu(60deg); /* 한 바퀴 회전 */
 }
