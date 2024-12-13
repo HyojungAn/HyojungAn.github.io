@@ -63,3 +63,16 @@ body.dark-mode .toggle-button {
     background-color: #555; /* 어두운 배경 */
     color: #fff; /* 밝은 텍스트 */
 }
+
+/* Hello World 스타일 */
+.hello {
+    font-size: 2rem; /* 기본 폰트 크기의 2배 */
+    margin-bottom: 1.5rem; /* 아래 링크들과의 간격 */
+    font-weight: bold; /* 텍스트 강조 */
+}
+
+/* 링크 스타일 */
+.links a {
+    display: block; /* 각 링크를 새 줄에 배치 */
+    margin: 0.5rem 0; /* 각 링크 사이의 간격 */
+}
