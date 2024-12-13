@@ -7,7 +7,15 @@
 body {
     font-family: 'My Font';
     background: beige;
+    color: black;
     text-align: center;
+    transition: background 0.3s, color 0.3s; /* 부드러운 전환 효과 */
+}
+
+/* 다크 모드 스타일 */
+body.dark-mode {
+    background: #1e1e1e; /* 어두운 배경색 */
+    color: #e0e0e0; /* 밝은 텍스트 */
 }
 
 a {
@@ -18,4 +26,9 @@ a {
 a:hover {
     color: inherit; 
     text-decoration: underline; 
+}
+
+/* 다크 모드에서 링크 스타일 */
+body.dark-mode a {
+    color: #7fbcff; /* 다크 모드에서 링크 색 */
 }
