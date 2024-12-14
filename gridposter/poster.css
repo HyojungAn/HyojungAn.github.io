@@ -23,7 +23,7 @@ svg {
 }
 
 svg:hover {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) skew(60deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     stroke-width: 8px;
 }
