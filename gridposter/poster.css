@@ -6,7 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: white;
-    transition: background-color 0.5s ease;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .poster {
@@ -14,13 +15,30 @@ body {
 }
 
 svg {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: auto;
+    max-width: 300px;
     margin: auto;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 svg:hover {
-    transform: skew(60deg);
+    transform: rotate(20deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+svg:active {
+    transform: scale(0.9);
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
