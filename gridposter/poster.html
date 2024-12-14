@@ -8,13 +8,29 @@
 </head>
 <body>
     <div class="poster">
-        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <!-- 각 원형 패턴 -->
-            <circle cx="250" cy="250" r="50" stroke="red" stroke-width="5" fill="none" />
-            <circle cx="250" cy="250" r="100" stroke="green" stroke-width="5" fill="none" />
-            <circle cx="250" cy="250" r="150" stroke="orange" stroke-width="5" fill="none" />
-            <!-- 반복 추가 -->
+        <svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+            <!-- Define the circle pattern as a reusable element -->
+            <defs>
+                <g id="circle-set">
+                    <circle cx="0" cy="0" r="50" stroke="red" stroke-width="5" fill="none" />
+                    <circle cx="0" cy="0" r="100" stroke="green" stroke-width="5" fill="none" />
+                    <circle cx="0" cy="0" r="150" stroke="orange" stroke-width="5" fill="none" />
+                </g>
+            </defs>
+
+            <!-- Create a 3x3 grid of circle sets -->
+            <g transform="translate(150, 150)"><use href="#circle-set" /></g>
+            <g transform="translate(450, 150)"><use href="#circle-set" /></g>
+            <g transform="translate(750, 150)"><use href="#circle-set" /></g>
+            <g transform="translate(150, 450)"><use href="#circle-set" /></g>
+            <g transform="translate(450, 450)"><use href="#circle-set" /></g>
+            <g transform="translate(750, 450)"><use href="#circle-set" /></g>
+            <g transform="translate(150, 750)"><use href="#circle-set" /></g>
+            <g transform="translate(450, 750)"><use href="#circle-set" /></g>
+            <g transform="translate(750, 750)"><use href="#circle-set" /></g>
         </svg>
+
+        <!-- Text Section -->
         <div class="text">
             <h1>musica viva</h1>
             <p>Donnerstag, den 7. Januar 1971<br>20.15 Uhr Grosser Tonhallesaal</p>
