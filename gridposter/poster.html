@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,79 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musica Viva Poster</title>
     <link rel="stylesheet" href="poster.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-        }
-
-        svg {
-            width: 400px;
-            height: 400px;
-        }
-
-        circle {
-            animation: skew-animation 2s infinite alternate;
-            transform-origin: center;
-            transition: transform 0.5s ease;
-        }
-
-        circle:nth-child(1) {
-            animation: skew-animation-1 3s infinite alternate;
-        }
-
-        circle:nth-child(2) {
-            animation: skew-animation-2 3s infinite alternate;
-        }
-
-        circle:nth-child(3) {
-            animation: skew-animation-3 3s infinite alternate;
-        }
-
-        @keyframes skew-animation-1 {
-            0% {
-                transform: skew(10deg, 5deg);
-            }
-            100% {
-                transform: skew(-10deg, -5deg);
-            }
-        }
-
-        @keyframes skew-animation-2 {
-            0% {
-                transform: skew(15deg, 10deg);
-            }
-            100% {
-                transform: skew(-15deg, -10deg);
-            }
-        }
-
-        @keyframes skew-animation-3 {
-            0% {
-                transform: skew(20deg, 15deg);
-            }
-            100% {
-                transform: skew(-20deg, -15deg);
-            }
-        }
-
-        circle:hover {
-            transform: skew(30deg, 15deg) scale(1.1);
-        }
-    </style>
 </head>
 <body>
     <div class="poster">
-        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="400" cy="400" r="100" stroke="red" stroke-width="5" fill="none" />
-            <circle cx="400" cy="400" r="200" stroke="green" stroke-width="5" fill="none" />
-            <circle cx="400" cy="400" r="300" stroke="orange" stroke-width="5" fill="none" />
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- 각 원형 패턴 -->
+            <circle cx="250" cy="250" r="50" stroke="red" stroke-width="5" fill="none" />
+            <circle cx="250" cy="250" r="100" stroke="green" stroke-width="5" fill="none" />
+            <circle cx="250" cy="250" r="150" stroke="orange" stroke-width="5" fill="none" />
+            <!-- 반복 추가 -->
         </svg>
+        <div class="text">
+            <h1>musica viva</h1>
+            <p>Donnerstag, den 7. Januar 1971<br>20.15 Uhr Grosser Tonhallesaal</p>
+        </div>
     </div>
 </body>
 </html>
